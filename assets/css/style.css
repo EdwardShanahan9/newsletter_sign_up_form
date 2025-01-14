@@ -8,7 +8,7 @@
   --color-dark-navy: #36384d;
   --color-white: #fff;
   --color-primary: #ff6155;
-  --color-grey-25: #19182b;
+  --color-grey-25: #c5c5ca;
 }
 
 /* Global */
@@ -25,4 +25,99 @@ html {
 
 body {
   font-family: "Roboto", serif;
+}
+
+/* Typography */
+
+h1,
+h2 {
+  color: var(--color-dark-navy);
+  font-size: 4rem;
+  margin-bottom: 2.4rem;
+}
+
+.paragraph {
+  color: var(--color-dark-navy);
+  font-size: 1.6rem;
+  line-height: 150%;
+  margin-bottom: 2.4rem;
+}
+
+.paragraph span {
+  font-weight: bold;
+}
+
+/* Sign Up */
+
+/* Popup */
+
+.popup {
+  display: none;
+}
+
+.signup__img {
+  margin-bottom: 4rem;
+}
+
+.signup__img img {
+  width: 100%;
+}
+
+.signup__text {
+  padding-right: 2.4rem;
+  padding-bottom: 2.4rem;
+  padding-left: 2.4rem;
+}
+
+.signup__list {
+  list-style: none;
+  margin-bottom: 4rem;
+}
+
+.signup__item {
+  color: var(--color-dark-navy);
+  font-size: 1.6rem;
+  line-height: 150%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.signup__item img {
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-right: 1.6rem;
+  display: block;
+}
+
+.signup__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.signup__label {
+  color: var(--color-dark-navy);
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+
+.signup__input {
+  color: var(--color-dark-navy);
+  font-size: 1.6rem;
+  font-family: inherit;
+  border: 1px solid var(--color-grey-25);
+  border-radius: 8px;
+  padding: 1.6rem 2.4rem;
+  width: 100%;
+  margin-bottom: 2.4rem;
+  cursor: pointer;
+}
+
+.button {
+  color: var(--color-white);
+  background-color: var(--color-dark-navy);
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 1.6rem;
+  width: 100%;
+  cursor: pointer;
 }
