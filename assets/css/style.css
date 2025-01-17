@@ -115,11 +115,19 @@ h2 {
 .button {
   color: var(--color-white);
   background-color: var(--color-dark-navy);
+  font-size: 1.6rem;
   font-weight: bold;
   border-radius: 8px;
+  border: none;
   padding: 1.6rem;
   width: 100%;
   cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(#ff6a3a, #ff527b);
+  box-shadow: 0px 5px 26px rgba(255, 96, 85, 0.5);
+  border: none;
 }
 
 @media (min-width: 1000px) {
@@ -146,6 +154,10 @@ h2 {
   }
 
   .signup__text {
-    flex-basis: 55%;
+    flex-basis: 50%;
+  }
+
+  .signup__img {
+    flex-basis: 45%;
   }
 }
