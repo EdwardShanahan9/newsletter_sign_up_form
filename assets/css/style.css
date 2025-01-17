@@ -8,6 +8,7 @@
   --color-dark-navy: #36384d;
   --color-white: #fff;
   --color-primary: #ff6155;
+  --color-primary-15: rgba(255, 96, 85, 0.15);
   --color-grey-25: #c5c5ca;
 }
 
@@ -100,6 +101,18 @@ h2 {
   display: block;
 }
 
+.signup__group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.signup__error {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: none;
+}
+
 .signup__input {
   color: var(--color-dark-navy);
   font-size: 1.6rem;
@@ -110,6 +123,15 @@ h2 {
   width: 100%;
   margin-bottom: 2.4rem;
   cursor: pointer;
+}
+
+.error .signup__input {
+  background-color: var(--color-primary-15);
+  border-color: var(--color-primary);
+}
+
+.error .signup__input::placeholder {
+  color: var(--color-primary);
 }
 
 .button {
