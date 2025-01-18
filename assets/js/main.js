@@ -10,12 +10,14 @@ const isEmailValid = () => {
   const isValid = validateEmail(emailValue);
   const errorMessageElement = document.querySelector(".signup__error");
   const emailInputElement = document.querySelector("#email");
-  const popupElement = document.querySelector(".popup");
+  const popupElement = document.querySelector(".popup__container");
   const signupElement = document.querySelector(".signup");
+  const userEmail = document.querySelector(".popup__email");
 
   if (isValid) {
-    popupElement.style.display = "block";
+    popupElement.style.display = "flex";
     signupElement.style.display = "none";
+    userEmail.textContent = emailValue;
   } else {
     errorMessageElement.classList.add("error");
     emailInputElement.classList.add("error");
