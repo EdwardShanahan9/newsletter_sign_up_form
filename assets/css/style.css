@@ -113,6 +113,10 @@ h2 {
   display: none;
 }
 
+.error.signup__error {
+  display: block;
+}
+
 .signup__input {
   color: var(--color-dark-navy);
   font-size: 1.6rem;
@@ -125,13 +129,10 @@ h2 {
   cursor: pointer;
 }
 
-.error .signup__input {
+.error.signup__input {
+  color: var(--color-primary);
   background-color: var(--color-primary-15);
   border-color: var(--color-primary);
-}
-
-.error .signup__input::placeholder {
-  color: var(--color-primary);
 }
 
 .button {
